@@ -37,7 +37,7 @@ img {
 body {
   background: #f2f4f8;
   height: 100%;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   width: 100vw;
   height: 100vh;
 }
@@ -68,26 +68,19 @@ h1 {
   box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
   border: 2px solid;
 }
-
-.boxes {
+.flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.boxes {
   width: 100%;
   height: 100%;
+  justify-content: space-evenly;
 }
 .box {
   border: 4px solid firebrick;
   height: 100%;
-  width: 50%;
-}
-.text {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.first {
-  margin-right: 20px;
+  width: 48%;
+  cursor: pointer;
 }
