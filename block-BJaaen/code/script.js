@@ -4,6 +4,7 @@ let userPoint = document.querySelector('.user-point');
 let computerPoint = document.querySelector('.computer-point');
 let userOptionDetails = document.querySelector('.user-option-details');
 let computerOptionDetails = document.querySelector('.computer-option-details');
+let btn = document.querySelector('.reset-btn > i');
 let userPointCount = 0;
 let computerPointCount = 0;
 
@@ -25,6 +26,22 @@ userOptions[0].addEventListener('click', () => {
   userOptionDetails.innerText = userWeapon;
   let computerWeapon = randomIndex();
   computerOptionDetails.innerText = computerWeapon;
+  switch (computerWeapon) {
+    case 'Paper':
+      computerPointCount++;
+      break;
+    case 'Scissor':
+      userPointCount++;
+      break;
+    case 'Lizard':
+      userPointCount++;
+      break;
+    case 'Spock':
+      computerPointCount++;
+      break;
+    default:
+      alert('tie');
+  }
   userPoint.innerText = userPointCount;
   computerPoint.innerText = computerPointCount;
 });
@@ -33,6 +50,22 @@ userOptions[1].addEventListener('click', () => {
   userOptionDetails.innerText = userWeapon;
   let computerWeapon = randomIndex();
   computerOptionDetails.innerText = computerWeapon;
+  switch (computerWeapon) {
+    case 'Rock':
+      userPointCount++;
+      break;
+    case 'Scissor':
+      computerPointCount++;
+      break;
+    case 'Lizard':
+      computerPointCount++;
+      break;
+    case 'Spock':
+      userPointCount++;
+      break;
+    default:
+      alert('tie');
+  }
   userPoint.innerText = userPointCount;
   computerPoint.innerText = computerPointCount;
 });
@@ -41,6 +74,22 @@ userOptions[2].addEventListener('click', () => {
   userOptionDetails.innerText = userWeapon;
   let computerWeapon = randomIndex();
   computerOptionDetails.innerText = computerWeapon;
+  switch (computerWeapon) {
+    case 'Paper':
+      userPointCount++;
+      break;
+    case 'Rock':
+      computerPointCount++;
+      break;
+    case 'Lizard':
+      userPointCount++;
+      break;
+    case 'Spock':
+      computerPointCount++;
+      break;
+    default:
+      alert('tie');
+  }
   userPoint.innerText = userPointCount;
   computerPoint.innerText = computerPointCount;
 });
@@ -48,7 +97,23 @@ userOptions[3].addEventListener('click', () => {
   let userWeapon = 'Lizard';
   userOptionDetails.innerText = userWeapon;
   let computerWeapon = randomIndex();
-  computerOptionDetails.innerText = randomIndex();
+  computerOptionDetails.innerText = computerWeapon;
+  switch (computerWeapon) {
+    case 'Paper':
+      userPointCount++;
+      break;
+    case 'Scissor':
+      computerPointCount++;
+      break;
+    case 'Rock':
+      computerPointCount++;
+      break;
+    case 'Spock':
+      userPointCount++;
+      break;
+    default:
+      alert('tie');
+  }
   userPoint.innerText = userPointCount;
   computerPoint.innerText = computerPointCount;
 });
@@ -56,7 +121,32 @@ userOptions[4].addEventListener('click', () => {
   let userWeapon = 'Spock';
   userOptionDetails.innerText = userWeapon;
   let computerWeapon = randomIndex();
-  computerOptionDetails.innerText = randomIndex();
+  computerOptionDetails.innerText = computerWeapon;
+  switch (computerWeapon) {
+    case 'Paper':
+      computerPointCount++;
+      break;
+    case 'Scissor':
+      userPointCount++;
+      break;
+    case 'Lizard':
+      computerPointCount++;
+      break;
+    case 'Rock':
+      userPointCount++;
+      break;
+    default:
+      alert('tie');
+  }
   userPoint.innerText = userPointCount;
   computerPoint.innerText = computerPointCount;
+});
+
+btn.addEventListener('click', function () {
+  userPoint.innerText = 0;
+  userPointCount = 0;
+  computerPoint.innerText = 0;
+  computerPointCount = 0;
+  computerOptionDetails.innerText = '';
+  userOptionDetails.innerText = '';
 });
