@@ -63,5 +63,10 @@ h1 {
   border: none;
   background: none;
   width: 130px;
+}
+.reset-btn i {
   cursor: pointer;
+}
+.reset-btn:focus {
+  outline: none;
 }
