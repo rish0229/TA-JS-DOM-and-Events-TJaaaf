@@ -22,34 +22,24 @@ function randomIndex() {
     : 'Spock';
 }
 
-function redBlip() {
-  // parentBox.style.background = 'red';
-}
-function greenBlip() {
-  // parentBox.style.background = 'green';
-}
-
 userOptions[0].addEventListener('click', () => {
   let userWeapon = 'Rock';
   userOptionDetails.innerText = userWeapon;
+  matching();
   let computerWeapon = randomIndex();
   computerOptionDetails.innerText = computerWeapon;
   switch (computerWeapon) {
     case 'Paper':
       computerPointCount++;
-      redBlip();
       break;
     case 'Scissor':
       userPointCount++;
-      greenBlip();
       break;
     case 'Lizard':
       userPointCount++;
-      greenBlip();
       break;
     case 'Spock':
       computerPointCount++;
-      redBlip();
       break;
     default:
       alert('tie');
@@ -60,24 +50,21 @@ userOptions[0].addEventListener('click', () => {
 userOptions[1].addEventListener('click', () => {
   let userWeapon = 'Paper';
   userOptionDetails.innerText = userWeapon;
+  matching();
   let computerWeapon = randomIndex();
   computerOptionDetails.innerText = computerWeapon;
   switch (computerWeapon) {
     case 'Rock':
       userPointCount++;
-      greenBlip();
       break;
     case 'Scissor':
       computerPointCount++;
-      redBlip();
       break;
     case 'Lizard':
       computerPointCount++;
-      redBlip();
       break;
     case 'Spock':
       userPointCount++;
-      greenBlip();
       break;
     default:
       alert('tie');
@@ -88,24 +75,21 @@ userOptions[1].addEventListener('click', () => {
 userOptions[2].addEventListener('click', () => {
   let userWeapon = 'Scissor';
   userOptionDetails.innerText = userWeapon;
+  matching();
   let computerWeapon = randomIndex();
   computerOptionDetails.innerText = computerWeapon;
   switch (computerWeapon) {
     case 'Paper':
       userPointCount++;
-      greenBlip();
       break;
     case 'Rock':
       computerPointCount++;
-      redBlip();
       break;
     case 'Lizard':
       userPointCount++;
-      greenBlip();
       break;
     case 'Spock':
       computerPointCount++;
-      redBlip();
       break;
     default:
       alert('tie');
@@ -116,24 +100,21 @@ userOptions[2].addEventListener('click', () => {
 userOptions[3].addEventListener('click', () => {
   let userWeapon = 'Lizard';
   userOptionDetails.innerText = userWeapon;
+  matching();
   let computerWeapon = randomIndex();
   computerOptionDetails.innerText = computerWeapon;
   switch (computerWeapon) {
     case 'Paper':
       userPointCount++;
-      greenBlip();
       break;
     case 'Scissor':
       computerPointCount++;
-      redBlip();
       break;
     case 'Rock':
       computerPointCount++;
-      redBlip();
       break;
     case 'Spock':
       userPointCount++;
-      greenBlip();
       break;
     default:
       alert('tie');
@@ -144,24 +125,21 @@ userOptions[3].addEventListener('click', () => {
 userOptions[4].addEventListener('click', () => {
   let userWeapon = 'Spock';
   userOptionDetails.innerText = userWeapon;
+  matching();
   let computerWeapon = randomIndex();
   computerOptionDetails.innerText = computerWeapon;
   switch (computerWeapon) {
     case 'Paper':
       computerPointCount++;
-      redBlip();
       break;
     case 'Scissor':
       userPointCount++;
-      greenBlip();
       break;
     case 'Lizard':
       computerPointCount++;
-      redBlip();
       break;
     case 'Rock':
       userPointCount++;
-      greenBlip();
       break;
     default:
       alert('tie');
