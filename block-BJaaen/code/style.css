@@ -31,6 +31,9 @@ body {
   height: 120px;
   background-color: rgb(255, 185, 94);
 }
+.content {
+  transition: all 100ms;
+}
 h1 {
   padding-top: 40px;
   text-align: center;
