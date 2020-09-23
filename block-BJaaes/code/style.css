@@ -134,8 +134,8 @@ label {
   content: '❌';
   display: inline-block;
   position: absolute;
-  right: 12px;
-  top: 66%;
+  right: 35px;
+  top: 52%;
   transform: translateY(-50%);
   z-index: 99;
   font-size: 0.75rem;
@@ -144,4 +144,17 @@ label {
 small {
   color: #ed755f;
   padding-top: 0.25rem;
+}
+button {
+  cursor: pointer;
+}
+input:required {
+  border: 2px solid red;
+}
+/* input:invalid {
+  border: 2px solid red;
+}
+*/
+input:valid {
+  border: 2px solid rgb(0, 150, 0);
 }
