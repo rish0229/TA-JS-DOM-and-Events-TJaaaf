@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Handeling Forms 👇</title>
+    <title>Handling Forms 👇</title>
   </head>
   <body>
     <div>
@@ -14,7 +14,7 @@
           <input
             id="name"
             type="text"
-            name="text"
+            name="name"
             placeholder="Enter your name"
           />
         </div>
@@ -29,19 +29,18 @@
         </div>
         <div class="form-control">
           <label for="movies">What do you love?</label>
-          <select id="gender" name="gender">
+          <select id="gender" name="genre">
             <option value="movies">Movies</option>
             <option value="series">Series</option>
             <option value="others">Others</option>
           </select>
         </div>
-
         <div class="form-control">
           <label for="color">Choose a color</label>
           <input
             id="color"
             type="color"
-            name="email"
+            name="color"
             placeholder="Enter your email"
           />
         </div>
@@ -52,13 +51,12 @@
             type="range"
             max="10"
             step="1"
-            name="email"
+            name="rate"
             placeholder="Enter your email"
           />
         </div>
         <div class="form-control">
           <label>Book genre you love?</label>
-
           <div>
             <input
               type="radio"
@@ -69,7 +67,6 @@
             />
             <label for="fiction">Fiction</label>
           </div>
-
           <div>
             <input
               type="radio"
@@ -79,7 +76,6 @@
             />
             <label for="non-fiction">Non Fiction</label>
           </div>
-
           <div>
             <input type="radio" id="adventure" name="drone" value="adventure" />
             <label for="adventure">Adventure</label>
@@ -92,6 +88,7 @@
         <button type="submit">Submit</button>
       </form>
     </div>
+    <!-- <div class="container"></div> -->
     <script src="./script.js"></script>
   </body>
 </html>
