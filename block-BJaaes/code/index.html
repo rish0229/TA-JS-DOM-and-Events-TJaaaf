@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Handeling Forms 👇</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Create Account</h1>
+      </header>
+      <form>
+        <div class="form-control">
+          <label for="text">Username</label>
+          <input
+            type="text"
+            name="username"
+            placeholder="arya"
+            minlength="4"
+            required
+          />
+        </div>
+        <div class="form-control">
+          <label for="text">Name</label>
+          <input type="text" name="name" placeholder="Arya Stark" required />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="text">Email</label>
+          <input
+            id="text"
+            type="email"
+            name="email"
+            placeholder="arya@stark.com"
+            minlength="6"
+            required
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="text">Phone Number</label>
+          <input
+            id="phone"
+            type="number"
+            name="phone"
+            placeholder="Enter your password"
+            minlength="7"
+            required
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="text">Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password"
+            placeholder="Enter your password"
+            required
+          />
+          <small></small>
+        </div>
+        <div class="form-control">
+          <label for="text">Confirm Password</label>
+          <input
+            id="password"
+            type="password"
+            name="password-check"
+            placeholder="Confirm Password"
+            required
+          />
+          <small></small>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
