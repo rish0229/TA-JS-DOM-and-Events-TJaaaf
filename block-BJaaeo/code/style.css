@@ -1,0 +1,92 @@
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(
+      to right,
+      rgba(83, 2, 2, 0.65),
+      rgba(1, 1, 77, 0.65)
+    ),
+    url(../assets/amol-tyagi-UZFCQPNc4bs-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  background: #f2f4f8;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.calc__div {
+  width: 450px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem 1rem;
+  place-items: center;
+  padding: 1.5rem 1rem;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+}
+h1 {
+  margin: 20px 0;
+  color: rgb(236, 236, 236);
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.btn {
+  width: 90px;
+  height: 70px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background-color: rgb(58 58 58 / 80%);
+}
+.num:hover,
+.sign:hover {
+  background-color: black;
+}
+.btn:first-child {
+  cursor: default;
+  width: 98%;
+  grid-column: span 4;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+.sign {
+  font-weight: bold;
+  font-size: 1rem;
+}
+.clear {
+  background-color: rgb(59, 0, 0);
+}
+.equal {
+  height: 150px;
+  grid-row: span 2;
+  background-color: rgb(0, 29, 0);
+}
+.zero {
+  grid-column: span 2;
+  width: 200px;
+}
