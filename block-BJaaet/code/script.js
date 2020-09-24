@@ -26,3 +26,8 @@ function removeData(elm) {
 }
 
 addBtn.addEventListener('click', createUI);
+inputElm.addEventListener('keydown', function (event) {
+  if (event.code === 'Enter') {
+    createUI();
+  }
+});
