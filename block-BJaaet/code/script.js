@@ -1,5 +1,4 @@
 let parentElm = document.querySelector('.parent-elm');
-let addBtn = document.querySelector('.add-btn');
 let inputElm = document.querySelector('input');
 
 function createUI(event) {
@@ -25,7 +24,6 @@ function removeData(elm) {
   elm.parentNode.removeChild(elm);
 }
 
-addBtn.addEventListener('click', createUI);
 inputElm.addEventListener('keydown', function (event) {
   if (event.code === 'Enter') {
     createUI();
